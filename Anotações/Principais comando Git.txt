@@ -1,0 +1,6 @@
+Git status
+Git add
+Git commit
+Git push
+Git pull
+git rm
