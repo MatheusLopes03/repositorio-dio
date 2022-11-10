@@ -1,2 +1,2 @@
 # Bootcamp orangetech+
-## Anotações do curso!
+## Anotações das materias, realizações de exercícios, etc...
