@@ -1,4 +1,3 @@
-
 /* Refazendo o segundo exercicio adcionando funções
 
 2- O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar uma indicação sobre a condição de peso de uma pessoa adulta. 
@@ -17,31 +16,28 @@ IMC em adultos Condição:
 */
 
 function calcularImc(peso, altura) {
-    return peso / Math.pow(altura, 2);
+  return peso / Math.pow(altura, 2);
 }
 
-function classificarImc (imc) {
-    if (imc > 40) {
-        return ('Obesidade Grave');
-    } else if (imc >= 30) {
-        return ('Obeso');
-    } else if (imc >= 25) {
-        return ('Acima do peso');
-    } else if (imc >= 18.5) {
-        return ('Peso nomal');
-    } else {
-        return ('Abaixo do peso');
-    }
+function classificarImc(imc) {
+  if (imc > 40) {
+    return "Obesidade Grave";
+  } else if (imc >= 30) {
+    return "Obeso";
+  } else if (imc >= 25) {
+    return "Acima do peso";
+  } else if (imc >= 18.5) {
+    return "Peso nomal";
+  } else {
+    return "Abaixo do peso";
+  }
 }
 
 //Main
 (function () {
-    const peso = 70;
-    const altura = 1.75;
+  const peso = 70;
+  const altura = 1.75;
 
-    const imc = calcularImc(peso, altura);
-    console.log(classificarImc(imc));
-})()
-
-
-
+  const imc = calcularImc(peso, altura);
+  console.log(classificarImc(imc));
+})();

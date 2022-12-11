@@ -11,13 +11,13 @@ const nota1 = 5;
 const nota2 = 3;
 const nota3 = 7;
 
-const media = (nota1 + nota2 + nota3) / 3
-console.log('Media:',media);
+const media = (nota1 + nota2 + nota3) / 3;
+console.log("Media:", media);
 
 if (media > 7) {
-    console.log('Aprovado');
+  console.log("Aprovado");
 } else if (media >= 5) {
-    console.log('Recuperação');
+  console.log("Recuperação");
 } else {
-    console.log('Reprovado');
+  console.log("Reprovado");
 }

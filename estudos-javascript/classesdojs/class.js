@@ -6,26 +6,24 @@ gasto em reais para realizar este percurso.
 */
 
 class Carro {
-    marca;
-    cor;
-    gastoPorKm;
+  marca;
+  cor;
+  gastoPorKm;
 
-    constructor(marca, cor, gastoPorKm) {
-        this.marca = marca;
-        this.cor = cor;
-        this.gastoPorKm = gastoPorKm;
-    }
+  constructor(marca, cor, gastoPorKm) {
+    this.marca = marca;
+    this.cor = cor;
+    this.gastoPorKm = gastoPorKm;
+  }
 
-    calcularGastoPercurso(distanciaKm, precoCombustivel){
-        return distanciaKm * this.gastoPorKm * precoCombustivel;
-    }
-
+  calcularGastoPercurso(distanciaKm, precoCombustivel) {
+    return distanciaKm * this.gastoPorKm * precoCombustivel;
+  }
 }
 
-const uninhotunado = new Carro('Fiat', 'Vermelho', 1/13);
+const uninhotunado = new Carro("Fiat", "Vermelho", 1 / 13);
 console.log(uninhotunado);
 console.log(uninhotunado.calcularGastoPercurso(73, 5));
-
 
 /*
 2- Crie uma classe para representar pessoas.
@@ -36,38 +34,36 @@ do seu IMC;
 */
 
 class Pessoa {
-    nome;
-    peso;
-    altura;
+  nome;
+  peso;
+  altura;
 
-    constructor(nome, peso, altura) {
-        this.nome = nome;
-        this.peso = peso;
-        this.altura = altura;
-    }
+  constructor(nome, peso, altura) {
+    this.nome = nome;
+    this.peso = peso;
+    this.altura = altura;
+  }
 
-    calcularImc(){
-        return this.peso / (this.altura * this.altura);
-    }
-    classificarImc(){
-        const imc = this.calcularImc();
+  calcularImc() {
+    return this.peso / (this.altura * this.altura);
+  }
+  classificarImc() {
+    const imc = this.calcularImc();
 
-        if (imc > 40) {
-            return ('Obesidade Grave');
-        } else if (imc >= 30) {
-            return ('Obeso');
-        } else if (imc >= 25) {
-            return ('Acima do peso');
-        } else if (imc >= 18.5) {
-            return ('Peso nomal');
-        } else {
-            return ('Abaixo do peso');
-        }
+    if (imc > 40) {
+      return "Obesidade Grave";
+    } else if (imc >= 30) {
+      return "Obeso";
+    } else if (imc >= 25) {
+      return "Acima do peso";
+    } else if (imc >= 18.5) {
+      return "Peso nomal";
+    } else {
+      return "Abaixo do peso";
     }
+  }
 }
 
-const jose = new Pessoa('José', 70, 1.75);
+const jose = new Pessoa("José", 70, 1.75);
 console.log(jose);
 console.log(jose.classificarImc());
-
-

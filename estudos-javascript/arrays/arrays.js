@@ -8,15 +8,15 @@ ANOTAÇÕES
 //Tabuada
 const num = 5;
 for (let i = 1; i < 11; i++) {
-     console.log(i * num);    
+  console.log(i * num);
 }
 
 //Imprimir números pares
-const numeros = [4 ,2 ,8, 5, 19, 3, 11, 14];
+const numeros = [4, 2, 8, 5, 19, 3, 11, 14];
 
 for (let i = 0; i < numeros.length; i++) {
-   const num = numeros[i]
-   if (num %2 === 0){
-   console.log(num);
-   }
+  const num = numeros[i];
+  if (num % 2 === 0) {
+    console.log(num);
+  }
 }
